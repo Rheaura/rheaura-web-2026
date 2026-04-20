@@ -245,7 +245,7 @@ export default function Home() {
             </div>
           </div>
           <div className="prod-card prod-card-small">
-            <img src="https://images.unsplash.com/photo-1595855759920-86582396756a?w=600&q=80" alt="Pesche Calabria" />
+            <img src="/pesche.jpg" alt="Pesche Calabria" />
             <div className="prod-arrow">↗</div>
             <div className="prod-card-body">
               <span className="prod-card-tag">🍑 Estate · Sibaritide</span>
