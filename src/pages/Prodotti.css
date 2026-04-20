@@ -1,0 +1,169 @@
+.prod-filter-bar {
+  background: white; border-bottom: 1px solid rgba(0,0,0,0.07);
+  position: sticky; top: 68px; z-index: 100;
+  padding: 0 6vw; display: flex; gap: 0;
+}
+.filter-btn {
+  padding: 1.1rem 1.5rem; background: none; border: none;
+  border-bottom: 2px solid transparent;
+  font-family: 'Outfit', sans-serif; font-size: 0.82rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--muted); cursor: pointer; transition: all 0.25s;
+}
+.filter-btn:hover { color: var(--g-accent); }
+.filter-btn.active { color: var(--g-accent); border-bottom-color: var(--g-accent); }
+
+.cat-block { padding: 90px 6vw; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.cat-block.alt { background: var(--cream); }
+
+.cat-header {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; align-items: center; margin-bottom: 4rem;
+}
+.cat-header.flip { direction: rtl; }
+.cat-header.flip > * { direction: ltr; }
+
+.cat-tag {
+  display: inline-block; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  background: rgba(61,140,70,0.1); color: var(--g-accent);
+  padding: 0.3rem 0.8rem; border-radius: 2px; margin-bottom: 1rem;
+}
+.cat-h-text h2 { font-size: clamp(2rem,3vw,3.2rem); font-weight: 700; color: var(--g-deep); line-height: 1.1; margin-bottom: 1.2rem; }
+.cat-h-text h2 em { font-style: italic; color: var(--g-accent); }
+.cat-body { font-size: 0.98rem; line-height: 1.85; color: var(--muted); }
+
+.cat-h-img { height: 340px; overflow: hidden; border-radius: 3px; box-shadow: 0 16px 50px rgba(0,0,0,0.12); }
+.cat-h-img img { width: 100%; height: 100%; object-fit: cover; }
+
+.varieta-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.2rem; }
+.varieta-card {
+  background: white; border-radius: 3px; border: 1px solid rgba(0,0,0,0.06);
+  overflow: hidden; transition: all 0.3s;
+}
+.varieta-card:hover { box-shadow: 0 10px 35px rgba(0,0,0,0.1); transform: translateY(-4px); border-color: rgba(61,140,70,0.3); }
+.vc-top {
+  height: 120px; display: flex; align-items: center; justify-content: center; font-size: 3rem;
+}
+.vc-top.peperoncino { background: linear-gradient(135deg,#3a0a08,#7a1a14); }
+.vc-top.cipolla     { background: linear-gradient(135deg,#3d1a3a,#7a3572); }
+.vc-top.frutta      { background: linear-gradient(135deg,#1a3820,#2d6a35); }
+.vc-top.agrumi      { background: linear-gradient(135deg,#3a2a08,#8a6010); }
+.vc-body { padding: 1rem 1.1rem 1.2rem; }
+.vc-name { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 700; color: var(--g-deep); margin-bottom: 0.3rem; }
+.vc-note { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+
+.stagionalita { padding: 70px 6vw; background: var(--g-deep); }
+.stag-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem,3vw,3rem); font-weight: 700; color: var(--cream); text-align: center; margin-bottom: 3rem; }
+.stag-title em { font-style: italic; color: var(--g-light); }
+.stag-table { width: 100%; border-collapse: collapse; }
+.stag-table th { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(246,241,232,0.35); padding: 0.6rem 0.5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.stag-table td { padding: 0.7rem 0.5rem; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 0.82rem; color: rgba(246,241,232,0.5); }
+.stag-table td:first-child { text-align: left; color: rgba(246,241,232,0.7); font-weight: 500; padding-left: 0; }
+.stag-dot { display: inline-block; width: 18px; height: 18px; border-radius: 50%; vertical-align: middle; }
+.dot-on   { background: var(--g-accent); }
+.dot-off  { background: rgba(255,255,255,0.07); }
+.dot-peak { background: var(--g-light); box-shadow: 0 0 8px rgba(125,186,106,0.5); }
+
+/* Bilancio & Mensile */
+.bilancio-section { padding: 80px 0; background: white; }
+.mensile-section  { padding: 80px 0; background: var(--cream); }
+
+.bilancio-header { text-align: center; margin-bottom: 3rem; }
+.bilancio-header h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem,3vw,3rem); font-weight: 700; color: var(--g-deep);
+}
+.bilancio-header h2 em { font-style: italic; color: var(--g-accent); }
+.bilancio-header p { max-width: 560px; margin: 1rem auto 0; font-size: 0.95rem; line-height: 1.8; color: var(--muted); }
+
+.bilancio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4vw; align-items: start; }
+
+.bilancio-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.bilancio-table thead tr { border-bottom: 2px solid var(--g-deep); }
+.bilancio-table th {
+  font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 700; color: var(--g-deep);
+  padding: 0.7rem 0.5rem;
+}
+.col-prodotto { text-align: left; padding-left: 0 !important; }
+.col-num { text-align: right; }
+.bilancio-table td { padding: 0.75rem 0.5rem; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.cell-prodotto { font-weight: 600; color: var(--g-deep); padding-left: 0 !important; }
+.cell-num { text-align: right; color: var(--ink); }
+.row-alt { background: rgba(61,140,70,0.04); }
+.row-totale { background: var(--g-deep); }
+.row-totale td {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 700;
+  color: var(--g-light); padding: 0.9rem 0.5rem;
+}
+.row-totale .cell-prodotto { padding-left: 0 !important; }
+.bilancio-fonte { margin-top: 0.8rem; font-size: 0.72rem; color: #aaa; }
+
+.bars-title {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700;
+  color: var(--g-deep); margin-bottom: 1.2rem;
+}
+.bars-list { display: flex; flex-direction: column; gap: 0.7rem; }
+.bar-row { display: grid; grid-template-columns: 140px 1fr 80px; align-items: center; gap: 0.8rem; font-size: 0.8rem; }
+.bar-label { color: var(--muted); text-align: right; }
+.bar-track { background: rgba(0,0,0,0.06); border-radius: 2px; height: 22px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 2px; }
+.bar-val { color: var(--ink); font-weight: 600; font-size: 0.78rem; }
+
+.bilancio-note {
+  margin-top: 1rem; padding: 1rem 1.2rem; border-radius: 0 3px 3px 0; font-size: 0.82rem; color: var(--muted); line-height: 1.6;
+}
+.bilancio-note-red { background: rgba(184,50,80,0.06); border-left: 3px solid #b83250; }
+.bilancio-note-green { background: rgba(61,140,70,0.06); border-left: 3px solid var(--g-accent); }
+.note-title { font-weight: 700; margin-bottom: 0.3rem; font-size: 0.85rem; }
+.bilancio-note-red .note-title { color: #8a2040; }
+.bilancio-note-green .note-title { color: var(--g-mid); }
+
+/* Mensile table */
+.mensile-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 700px; }
+.mensile-table thead tr { background: var(--g-deep); }
+.mensile-table th {
+  padding: 0.9rem 1rem; color: rgba(246,241,232,0.6); font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.7rem; text-align: right;
+}
+.col-mese { text-align: left !important; }
+.col-tot { color: var(--g-light) !important; font-weight: 700 !important; text-align: right; }
+.mensile-table td { padding: 0.7rem 1rem; border-bottom: 1px solid rgba(0,0,0,0.05); text-align: right; }
+.cell-mese { font-weight: 600; color: var(--g-deep); text-align: left !important; }
+.cell-num-m { color: var(--muted); }
+.cell-tot { font-weight: 700; color: var(--ink); text-align: right; }
+.mensile-table .row-alt { background: rgba(61,140,70,0.03); }
+.row-totale-m { background: var(--g-deep); }
+.row-totale-m td {
+  font-family: 'Cormorant Garamond', serif; font-weight: 700;
+  color: var(--g-light); padding: 0.9rem 1rem;
+}
+.row-totale-m .cell-mese { text-align: left !important; }
+
+.picchi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-top: 2.5rem; }
+.picco-card { background: white; border-radius: 3px; padding: 1.5rem; }
+.picco-fragole  { border-top: 3px solid #b83250; }
+.picco-agrumi   { border-top: 3px solid var(--orange); }
+.picco-ortaggi  { border-top: 3px solid var(--g-accent); }
+.picco-icon { font-size: 1.3rem; margin-bottom: 0.6rem; }
+.picco-title { font-weight: 700; color: var(--g-deep); margin-bottom: 0.4rem; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; }
+.picco-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+/* Stagionalità legend */
+.stag-legend {
+  margin-top: 1.5rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;
+}
+.stag-legend-item {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.75rem; color: rgba(246,241,232,0.4);
+}
+.stag-dot-sm { width: 14px !important; height: 14px !important; flex-shrink: 0; }
+
+@media (max-width: 900px) {
+  .cat-header { grid-template-columns: 1fr; }
+  .cat-header.flip { direction: ltr; }
+  .varieta-grid { grid-template-columns: repeat(2,1fr); }
+  .prod-filter-bar { flex-wrap: wrap; }
+  .bilancio-grid { grid-template-columns: 1fr; }
+  .picchi-grid { grid-template-columns: 1fr; }
+  .bar-row { grid-template-columns: 100px 1fr 70px; }
+}

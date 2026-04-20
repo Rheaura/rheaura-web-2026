@@ -1,0 +1,143 @@
+.cs-storia { padding: 100px 6vw; background: white; }
+.storia-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; align-items: center; max-width: 1200px; margin: 0 auto; }
+.storia-text h2 { font-size: clamp(2rem,3vw,3rem); font-weight: 700; color: var(--g-deep); line-height: 1.15; margin-bottom: 1.5rem; }
+.storia-text h2 em { font-style: italic; color: var(--g-accent); }
+.storia-body { font-size: 1rem; line-height: 1.85; color: var(--muted); margin-bottom: 1.2rem; }
+.storia-body strong { color: var(--ink); font-weight: 600; }
+
+.storia-visual { position: relative; }
+.storia-img-wrap { position: relative; height: 500px; }
+.img-main { position: absolute; top: 0; right: 0; width: 82%; height: 380px; object-fit: cover; border-radius: 3px; box-shadow: 0 24px 64px rgba(0,0,0,0.14); }
+.img-inset { position: absolute; bottom: 0; left: 0; width: 48%; height: 240px; object-fit: cover; border-radius: 3px; box-shadow: 0 16px 48px rgba(0,0,0,0.18); border: 5px solid white; }
+.floatbox { position: absolute; top: 50%; right: -24px; transform: translateY(-50%); background: var(--g-deep); color: white; padding: 1.5rem 1.8rem; border-radius: 3px; text-align: center; box-shadow: 0 12px 40px rgba(0,0,0,0.2); }
+.floatbox strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 700; color: var(--g-light); line-height: 1; }
+.floatbox span { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
+
+/* Modello */
+.cs-modello { padding: 100px 0; background: var(--cream); }
+.section-header { text-align: center; margin-bottom: 3.5rem; }
+.section-title { font-size: clamp(2rem,3vw,3rem); font-weight: 700; color: var(--g-deep); margin-bottom: 1rem; }
+.section-title em { font-style: italic; color: var(--g-accent); }
+.section-lead { font-size: 1rem; line-height: 1.8; color: var(--muted); max-width: 640px; margin: 0 auto; }
+
+.modello-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 3rem; }
+.modello-step {
+  background: white; padding: 2.5rem 2rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  position: relative; overflow: hidden; transition: all 0.3s;
+}
+.modello-step:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.08); transform: translateY(-4px); }
+.step-num {
+  font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 700;
+  color: rgba(61,140,70,0.08); line-height: 1;
+  position: absolute; top: 0.5rem; right: 1rem; pointer-events: none;
+}
+.step-icon { font-size: 1.8rem; margin-bottom: 1rem; display: block; }
+.modello-step h4 { font-size: 1.2rem; font-weight: 700; color: var(--g-deep); margin-bottom: 0.8rem; }
+.modello-step p { font-size: 0.88rem; line-height: 1.75; color: var(--muted); }
+
+/* Territorio */
+.cs-territorio { padding: 100px 0; background: var(--cream); }
+.territorio-intro { max-width: 700px; margin: 0 auto; text-align: center; margin-bottom: 4rem; }
+.territorio-intro h2 { font-size: clamp(2rem,3vw,3rem); font-weight: 700; color: var(--g-deep); margin-bottom: 1rem; }
+.territorio-intro h2 em { font-style: italic; color: var(--g-accent); }
+.territorio-intro p { font-size: 1rem; line-height: 1.8; color: var(--muted); }
+
+.regioni-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem; }
+.regione-card {
+  background: white; border-radius: 3px; overflow: hidden;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+  display: grid; grid-template-columns: 120px 1fr; transition: all 0.3s;
+}
+.regione-card:hover { box-shadow: 0 10px 40px rgba(0,0,0,0.1); transform: translateY(-3px); }
+.regione-color {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-size: 2.5rem; gap: 0.5rem;
+}
+.rc-calabria { background: var(--g-deep); }
+.rc-campania { background: #5c3d1e; }
+.regione-body { padding: 1.5rem; }
+.regione-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 700; color: var(--g-deep); margin-bottom: 0.3rem; }
+.regione-desc { font-size: 0.85rem; line-height: 1.7; color: var(--muted); margin-bottom: 0.8rem; }
+.regione-soci { font-size: 0.75rem; font-weight: 600; color: var(--g-accent); letter-spacing: 0.05em; }
+
+/* Compagine Sociale */
+.cs-compagine { padding: 100px 0; background: var(--cream); }
+.cs-compagine .container { max-width: 80%; }
+
+.compagine-group { margin-bottom: 3rem; }
+.compagine-group-header {
+  display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;
+}
+.compagine-group-icon {
+  width: 40px; height: 40px; background: var(--g-deep); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; flex-shrink: 0;
+}
+.compagine-group-title {
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--g-accent);
+}
+.compagine-group-sub { font-size: 0.85rem; color: var(--muted); }
+
+.coop-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1px; background: rgba(0,0,0,0.06);
+}
+.coop-card {
+  background: white; padding: 1.5rem 1.8rem;
+}
+.coop-card-top {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 0.6rem;
+}
+.coop-nome {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-weight: 700; color: var(--g-deep);
+}
+.regione-badge {
+  font-size: 0.65rem; font-weight: 700; white-space: nowrap;
+  padding: 0.2rem 0.5rem; border-radius: 2px;
+}
+.badge-calabria { color: var(--g-accent); background: rgba(61,140,70,0.08); }
+.badge-campania { color: var(--orange);   background: rgba(212,116,42,0.08); }
+.coop-meta {
+  display: flex; gap: 1.5rem; font-size: 0.82rem; color: var(--muted);
+}
+
+.aziende-grid {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 1px; background: rgba(0,0,0,0.06);
+}
+.azienda-card {
+  display: flex; align-items: center; gap: 0.8rem;
+  padding: 1rem 1.2rem; background: var(--warm);
+}
+.azienda-icon { font-size: 1.2rem; }
+.azienda-nome { font-size: 0.9rem; font-weight: 600; color: var(--g-deep); }
+.azienda-meta { font-size: 0.72rem; color: var(--muted); }
+
+.superfici-band {
+  margin-top: 3rem; background: var(--g-deep); border-radius: 4px;
+  padding: 2.5rem 3rem;
+  display: grid; grid-template-columns: repeat(5,1fr); gap: 1px;
+}
+.superfici-item { text-align: center; padding: 1rem 0.5rem; }
+.superfici-item.has-border { border-left: 1px solid rgba(255,255,255,0.07); }
+.superfici-val {
+  font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700;
+  color: var(--g-light); line-height: 1;
+}
+.superfici-label {
+  font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(246,241,232,0.35); margin-top: 0.3rem;
+}
+
+@media (max-width: 900px) {
+  .storia-grid { grid-template-columns: 1fr; }
+  .modello-grid { grid-template-columns: 1fr; }
+  .regioni-grid { grid-template-columns: 1fr; }
+  .coop-grid { grid-template-columns: 1fr; }
+  .aziende-grid { grid-template-columns: repeat(2,1fr); }
+  .superfici-band { grid-template-columns: repeat(2,1fr); padding: 1.5rem; }
+}

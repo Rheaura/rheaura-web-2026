@@ -1,0 +1,87 @@
+export const certIntroText = {
+  titolo: 'Perché le certificazioni',
+  titoloEm: 'contano davvero',
+  paragrafi: [
+    'Nel mercato ortofrutticolo moderno, le certificazioni non sono un elemento differenziante facoltativo — sono il biglietto d\'ingresso ai canali più importanti: grande distribuzione organizzata, import-export europeo, food service di alto livello.',
+    'Ma per noi hanno un significato ulteriore: ogni audit, ogni controllo, ogni verifica esterna è un\'opportunità per migliorare i nostri processi, identificare debolezze e alzare ulteriormente il nostro standard operativo. <strong>La certificazione non è il traguardo — è il punto di partenza.</strong>',
+  ],
+  promise: [
+    { icon: '🔍', titolo: 'Audit Indipendenti',     testo: 'Verifiche annuali da enti terzi accreditati. Nessun conflitto di interesse.' },
+    { icon: '📋', titolo: 'Tracciabilità Totale',    testo: 'Ogni lotto è tracciato dal campo alla spedizione. Zero opacità nella filiera.' },
+    { icon: '🌱', titolo: 'Miglioramento Continuo',  testo: 'Le certificazioni ci obbligano a migliorare ogni anno. È un vincolo virtuoso.' },
+    { icon: '🤝', titolo: 'Fiducia del Mercato',     testo: 'Buyers internazionali e GDO ci scelgono perché le nostre certificazioni parlano per noi.' },
+  ],
+  visual: 'Certificare significa <em>assumersi la responsabilità</em> di ciò che si produce — davanti ai consumatori, ai partner e alla propria coscienza.',
+  logos: ['GlobalG.A.P.', 'IFS Food', 'ISO 17065', 'ICEA Bio', 'IGP · UE', 'Legambiente'],
+};
+
+export const certCards = [
+  {
+    id: 'globalgap',
+    icon: '✅',
+    iconClass: 'green',
+    titolo: 'GlobalG.A.P.',
+    sottotitolo: 'Good Agricultural Practices — Universale',
+    desc: 'GlobalG.A.P. è il riferimento mondiale per le buone pratiche agricole. Copre l\'intero ciclo produttivo: gestione del suolo e delle acque, uso dei fitosanitari, sicurezza dei lavoratori, tracciabilità del prodotto e gestione dei rifiuti. È lo standard minimo richiesto da quasi tutta la GDO europea.',
+    cosa: 'Sicurezza alimentare certificata, tracciabilità completa dalla semina al prodotto finito, gestione responsabile delle risorse naturali, controllo sistematico dei residui chimici.',
+    chi: ['Cons. Peperoncino Calabria', 'Az. Ruggiero', 'Coop. San Pietro', 'Passioni di Terra', 'Quattroelle', 'Romano'],
+  },
+  {
+    id: 'ifs',
+    icon: '⭐',
+    iconClass: 'blue',
+    titolo: 'IFS Food',
+    sottotitolo: 'International Featured Standards — Livello superiore',
+    desc: 'IFS Food è uno standard di sicurezza alimentare sviluppato dalla distribuzione europea — in primis tedesca e francese. È più esigente di GlobalGAP e copre non solo la produzione agricola ma anche i processi di lavorazione, confezionamento, etichettatura e logistica. È la porta d\'ingresso ai mercati europei più selettivi.',
+    cosa: 'Sistema HACCP implementato e auditato, controllo dei processi produttivi, gestione delle non conformità, competenza e formazione del personale, audit approfonditi con score numerico.',
+    chi: ['Az. Agr. Michele Ruggiero', 'Passioni di Terra', 'Soc. Coop. Romano'],
+  },
+  {
+    id: 'icea-bio',
+    icon: '🌿',
+    iconClass: 'gold',
+    titolo: 'ICEA Biologico',
+    sottotitolo: 'Istituto per la Certificazione Etica e Ambientale',
+    desc: 'La certificazione biologica ICEA attesta che i prodotti di Passioni di Terra sono coltivati senza l\'uso di pesticidi di sintesi, fertilizzanti chimici o organismi geneticamente modificati. Il protocollo di transizione e il mantenimento della certificazione prevedono controlli annuali sui suoli, sulle acque e sui prodotti.',
+    cosa: 'Nessun residuo chimico di sintesi, rispetto del suolo e della biodiversità, produzione in equilibrio con l\'ecosistema locale, piena conformità al Reg. UE 2018/848 sul biologico.',
+    chi: ['Passioni di Terra Soc. Coop.', 'Agrumi biologici Sibaritide'],
+  },
+  {
+    id: 'igp',
+    icon: '🏅',
+    iconClass: 'gold',
+    titolo: 'IGP — Cipolla Rossa di Tropea Calabria',
+    sottotitolo: 'Indicazione Geografica Protetta — UE',
+    desc: 'L\'IGP è un riconoscimento europeo che tutela prodotti il cui nome, qualità o reputazione sono essenzialmente legate al territorio di origine. La Cipolla Rossa di Tropea Calabria IGP è uno dei prodotti più iconici del Sud Italia, protetto dal disciplinare che ne definisce la zona di produzione, le varietà ammesse e i parametri qualitativi minimi.',
+    cosa: 'Origine certificata e inconfondibile, standard qualitativi minimi garantiti, tutela legale della denominazione in tutta la UE, valorizzazione del territorio d\'origine.',
+    chi: ['Az. Agr. Michele Ruggiero', 'Zona IGP: Amantea · Vibo Valentia · Tropea'],
+  },
+  {
+    id: 'iso17065',
+    icon: '📐',
+    iconClass: 'olive',
+    titolo: 'ISO/IEC 17065',
+    sottotitolo: 'Certificazione di Prodotto — Accreditamento',
+    desc: 'ISO 17065 è lo standard internazionale per la certificazione di prodotti, processi e servizi. Attesta che l\'organismo di certificazione che rilascia le nostre certificazioni opera con piena competenza, imparzialità e coerenza. È la certificazione della certificazione — la garanzia di terzo livello che tutela la credibilità dell\'intero sistema.',
+    cosa: 'Accreditamento dell\'ente certificatore, imparzialità e indipendenza dei controlli, sistema di gestione della qualità nell\'ente terzo, riconoscimento internazionale dei certificati rilasciati.',
+    chi: ['Soc. Coop. Romano'],
+  },
+  {
+    id: 'legambiente',
+    icon: '🌱',
+    iconClass: 'green',
+    titolo: 'Legambiente Agricoltura',
+    sottotitolo: 'Adesione Volontaria — Sostenibilità Ambientale',
+    desc: 'L\'adesione a Legambiente testimonia un impegno volontario che va oltre le certificazioni obbligatorie: riduzione dell\'impatto ambientale, promozione dell\'agricoltura sostenibile, tutela della biodiversità e responsabilità verso le comunità rurali. Non è un obbligo — è una scelta identitaria.',
+    cosa: 'Impegno misurabile nella riduzione dell\'impatto ambientale, partecipazione a programmi di sostenibilità attiva, reputazione presso consumatori attenti all\'ambiente e ai temi ESG.',
+    chi: ['Az. Agr. Michele Ruggiero'],
+  },
+];
+
+export const processoSteps = [
+  { num: '1', titolo: 'Campo & Coltivazione',         desc: 'Pratiche agricole certificate, registro trattamenti, monitoraggio del suolo e delle acque.' },
+  { num: '2', titolo: 'Raccolta & Selezione',          desc: 'Raccolta al momento ottimale di maturazione, selezione manuale e meccanica per calibro e qualità.' },
+  { num: '3', titolo: 'Lavorazione & Confezionamento', desc: 'Strutture moderne con sistemi di tracking lotto. Ogni unità è identificata e tracciata.' },
+  { num: '4', titolo: 'Audit di Terze Parti',          desc: 'Verifiche annuali e straordinarie da enti certificatori indipendenti. Nessun autocontrollo esclusivo.' },
+  { num: '5', titolo: 'Consegna & Feedback',           desc: 'Monitoraggio post-consegna. Il feedback del cliente torna al produttore per il miglioramento continuo.' },
+];
