@@ -161,9 +161,23 @@
 @media (max-width: 900px) {
   .cat-header { grid-template-columns: 1fr; }
   .cat-header.flip { direction: ltr; }
+  .cat-block { padding: 60px 6vw; }
   .varieta-grid { grid-template-columns: repeat(2,1fr); }
-  .prod-filter-bar { flex-wrap: wrap; }
+  .prod-filter-bar { flex-wrap: wrap; padding: 0 4vw; }
+  .bilancio-section { padding: 60px 0; }
+  .mensile-section { padding: 60px 0; }
   .bilancio-grid { grid-template-columns: 1fr; }
   .picchi-grid { grid-template-columns: 1fr; }
   .bar-row { grid-template-columns: 100px 1fr 70px; }
+  .stagionalita { padding: 60px 4vw; }
+  .stag-title { font-size: clamp(1.8rem, 5vw, 3rem); margin-bottom: 2rem; }
+}
+@media (max-width: 600px) {
+  .varieta-grid { grid-template-columns: repeat(2,1fr); }
+  .cat-h-img { height: 250px; }
+  .filter-btn { padding: 0.9rem 1rem; font-size: 0.75rem; }
+}
+@media (max-width: 480px) {
+  .varieta-grid { grid-template-columns: 1fr 1fr; }
+  .bar-row { grid-template-columns: 80px 1fr 60px; font-size: 0.72rem; }
 }

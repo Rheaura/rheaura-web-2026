@@ -180,5 +180,15 @@ h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
   .page-hero { grid-template-columns: 1fr; }
   .ph-right { height: 280px; }
   .ph-left::after { display: none; }
+  .ph-left { padding: 80px 6vw 60px; }
   .numeri-grid { grid-template-columns: repeat(2,1fr); }
+  .numeri-band { padding: 50px 6vw; }
+}
+@media (max-width: 480px) {
+  .ph-title { font-size: clamp(2.2rem, 9vw, 3.5rem); }
+  .ph-lead { font-size: 0.95rem; }
+  .ph-right { height: 220px; }
+  .numeri-grid { grid-template-columns: repeat(2,1fr); }
+  .numero { padding: 2rem 1rem; }
+  .numero-val { font-size: 2.8rem; }
 }

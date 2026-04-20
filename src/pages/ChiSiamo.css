@@ -135,9 +135,26 @@
 
 @media (max-width: 900px) {
   .storia-grid { grid-template-columns: 1fr; }
+  .storia-img-wrap { height: 380px; }
+  .floatbox { right: 0; }
   .modello-grid { grid-template-columns: 1fr; }
   .regioni-grid { grid-template-columns: 1fr; }
   .coop-grid { grid-template-columns: 1fr; }
   .aziende-grid { grid-template-columns: repeat(2,1fr); }
-  .superfici-band { grid-template-columns: repeat(2,1fr); padding: 1.5rem; }
+  .superfici-band { grid-template-columns: repeat(2,1fr); padding: 1.5rem; overflow-x: auto; }
+  .cs-storia { padding: 60px 6vw; }
+  .cs-modello { padding: 60px 0; }
+  .cs-territorio { padding: 60px 0; }
+  .cs-compagine { padding: 60px 0; }
+  .cs-compagine .container { max-width: 100%; }
+}
+@media (max-width: 600px) {
+  .storia-img-wrap { height: 300px; }
+  .img-main { width: 100%; }
+  .img-inset { display: none; }
+  .floatbox { position: static; transform: none; margin-top: 1.2rem; display: inline-block; }
+  .aziende-grid { grid-template-columns: 1fr; }
+  .superfici-band { grid-template-columns: 1fr 1fr; }
+  .regione-card { grid-template-columns: 80px 1fr; }
+  .regione-color { font-size: 1.8rem; }
 }

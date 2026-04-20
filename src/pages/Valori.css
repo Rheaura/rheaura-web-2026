@@ -94,8 +94,16 @@
 .sost-card p { font-size: 0.82rem; line-height: 1.65; color: var(--muted); }
 
 @media (max-width: 900px) {
-  .valore-full { grid-template-columns: 1fr; }
+  .valore-full { grid-template-columns: 1fr; padding: 60px 6vw; }
   .valore-full.reverse { direction: ltr; }
+  .vf-img-box { height: 300px; }
+  .vf-accent-box { position: static; margin-top: 1rem; max-width: 100%; }
+  .pilastri-section { padding: 60px 6vw; }
   .pilastri-track { grid-template-columns: repeat(2,1fr); }
-  .sostenibilita { grid-template-columns: 1fr; }
+  .sostenibilita { grid-template-columns: 1fr; padding: 60px 6vw; }
+  .valori-manifesto { padding: 60px 6vw; }
+}
+@media (max-width: 480px) {
+  .pilastri-track { grid-template-columns: 1fr; }
+  .sost-right { grid-template-columns: 1fr; }
 }

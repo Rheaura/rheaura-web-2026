@@ -79,6 +79,9 @@
 .form-success p { font-size: 1rem; color: var(--muted); }
 
 @media (max-width: 900px) {
+  .contatti-hero { padding: 120px 6vw 60px; }
+  .contatti-body { padding: 60px 6vw; }
   .contatti-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
+  .contatti-form-wrap { padding: 1.8rem 1.5rem; }
 }

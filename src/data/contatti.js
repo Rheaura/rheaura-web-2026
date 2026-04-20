@@ -4,7 +4,7 @@ export const contattiInfo = {
   intro: 'Che tu sia un buyer della GDO, un importatore europeo o un operatore del settore ortofrutticolo, siamo pronti ad ascoltarti. Compila il form o contattaci direttamente.',
   email: 'info@rheaura.it',
   telefono: '+39 0984 000000',
-  indirizzo: 'Via Agricoltura 12, 87100 Cosenza (CS)',
+  indirizzo: 'Via Capolanza 58, 87011 Cassano alla Ionio (CS)',
   piva: 'P.IVA 01234567890',
 };
 

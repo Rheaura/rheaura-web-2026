@@ -218,7 +218,7 @@ export default function Home() {
             </div>
           </div>
           <div className="prod-card prod-card-small">
-            <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&q=80" alt="Ortaggi Vari" />
+            <img src="/ortaggi.jpg" alt="Ortaggi Vari" />
             <div className="prod-arrow">↗</div>
             <div className="prod-card-body">
               <span className="prod-card-tag">🥬 Tutto l'Anno</span>
@@ -227,7 +227,7 @@ export default function Home() {
             </div>
           </div>
           <div className="prod-card prod-card-small">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Fragole Campania" />
+            <img src="/fragola.jpg" alt="Fragole Campania" />
             <div className="prod-arrow">↗</div>
             <div className="prod-card-body">
               <span className="prod-card-tag">🍓 Alto Valore · Campania</span>
@@ -318,15 +318,15 @@ export default function Home() {
           <div className="territorio-right reveal reveal-delay-2">
             <div className="territorio-img-grid">
               <div className="t-img-cell tall">
-                <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=600&q=80" alt="Peperoncini Calabria" />
+                <img src="/peperoncino.jpg" alt="Peperoncini Calabria" />
                 <span className="t-img-label">Peperoncini · Cosenza</span>
               </div>
               <div className="t-img-cell">
-                <img src="https://images.unsplash.com/photo-1582819508369-4937b9c2d98f?w=600&q=80" alt="Cipolla Rossa di Tropea" />
+                <img src="/cipolle.jpg" alt="Cipolla Rossa di Tropea" />
                 <span className="t-img-label">Cipolla IGP · Tropea</span>
               </div>
               <div className="t-img-cell">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Fragole Campania" />
+                <img src="/fragola.jpg" alt="Fragole Campania" />
                 <span className="t-img-label">Fragole · Caserta</span>
               </div>
             </div>
