@@ -57,7 +57,11 @@ export default function Certificazioni() {
             {certCards.map((c) => (
               <div key={c.id} className="cert-card reveal">
                 <div className="cc-head">
-                  <div className={`cc-icon ${c.iconClass}`}>{c.icon}</div>
+                  <div className={`cc-icon ${c.iconClass}`}>
+                    {c.logoSrc
+                      ? <img src={c.logoSrc} alt={c.titolo} className="cc-icon-img" />
+                      : c.icon}
+                  </div>
                   <div>
                     <div className="cc-title">{c.titolo}</div>
                     <div className="cc-subtitle">{c.sottotitolo}</div>
@@ -67,9 +71,6 @@ export default function Certificazioni() {
                   <p className="cc-desc">{c.desc}</p>
                   <div className="cc-what">
                     <strong>Cosa garantisce: </strong>{c.cosa}
-                  </div>
-                  <div className="cc-who">
-                    {c.chi.map((t) => <span key={t} className="who-tag">{t}</span>)}
                   </div>
                 </div>
               </div>

@@ -32,6 +32,9 @@
 }
 .ft-col ul li a:hover { color: var(--g-light); }
 
+.ft-social-link { display: flex; align-items: center; gap: 0.5rem; }
+.ft-social-icon { width: 15px; height: 15px; flex-shrink: 0; color: rgba(255,255,255,0.4); }
+
 .ft-bottom {
   display: flex; justify-content: space-between; align-items: center;
   flex-wrap: wrap; gap: 1rem;

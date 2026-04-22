@@ -62,7 +62,6 @@ export default function Home() {
   const rTerritorio = useRevealSection();
   const rSuperfici  = useRevealSection();
   const rValori     = useRevealSection();
-  const rCert       = useRevealSection();
   const rCta        = useRevealSection();
 
   /* bar chart animato */
@@ -126,7 +125,7 @@ export default function Home() {
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
               </button>
               <button className="btn btn-ghost" onClick={() => navigate('/prodotti')}>
-                I Prodotti 2025
+                I Prodotti
               </button>
             </div>
           </div>
@@ -310,7 +309,7 @@ export default function Home() {
               Qui, dove la Magna Grecia fondò Sibari e i contadini hanno lavorato la stessa terra per millenni, RheAura costruisce ogni giorno un sistema agricolo moderno, certificato, proiettato ai mercati europei — senza dimenticare le radici.
             </p>
             <div className="territorio-pills">
-              {['🌶️ Valle dell\'Esaro','🍊 Piana di Sibari','🧅 Costa degli Dei','🍓 Piana di Caserta','🍊 Corigliano-Rossano','🌿 Rocca di Neto'].map(p => (
+              {['Valle dell\'Esaro','Piana di Sibari','Costa degli Dei','Piana di Caserta','Corigliano-Rossano','Rocca di Neto'].map(p => (
                 <span className="pill" key={p}>{p}</span>
               ))}
             </div>
@@ -390,21 +389,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CERT STRIP ── */}
-      <div className="cert-strip-section" ref={rCert}>
-        <div className="cert-strip-inner reveal">
-          <span className="cert-strip-label">Certificazioni</span>
-          <div className="cert-strip-divider" />
-          <div className="cert-items">
-            {[['GlobalG.A.P.', true],['IFS Food', true],['ISO/IEC 17065', false],['ICEA Biologico', false],['Reg. CE 1308/2013', false]].map(([c, feat]) => (
-              <span className={`cert-chip${feat ? ' featured' : ''}`} key={c}>{c}</span>
-            ))}
-          </div>
-          <div className="cert-strip-right">
-            <button className="cert-link" onClick={() => navigate('/certificazioni')}>Approfondisci →</button>
-          </div>
-        </div>
-      </div>
 
       {/* ── CONTATTI CTA ── */}
       <section className="cta-section" id="contatti" ref={rCta}>

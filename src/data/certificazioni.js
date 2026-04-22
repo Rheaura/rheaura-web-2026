@@ -19,6 +19,7 @@ export const certCards = [
   {
     id: 'globalgap',
     icon: '✅',
+    logoSrc: '/cert-logos/globalgap.svg',
     iconClass: 'green',
     titolo: 'GlobalG.A.P.',
     sottotitolo: 'Good Agricultural Practices — Universale',
@@ -29,6 +30,7 @@ export const certCards = [
   {
     id: 'ifs',
     icon: '⭐',
+    logoSrc: '/cert-logos/ifs.png',
     iconClass: 'blue',
     titolo: 'IFS Food',
     sottotitolo: 'International Featured Standards — Livello superiore',
@@ -39,6 +41,7 @@ export const certCards = [
   {
     id: 'icea-bio',
     icon: '🌿',
+    logoSrc: '/cert-logos/bio-leaf.svg',
     iconClass: 'gold',
     titolo: 'ICEA Biologico',
     sottotitolo: 'Istituto per la Certificazione Etica e Ambientale',
@@ -49,6 +52,7 @@ export const certCards = [
   {
     id: 'igp',
     icon: '🏅',
+    logoSrc: '/cert-logos/igp.svg',
     iconClass: 'gold',
     titolo: 'IGP — Cipolla Rossa di Tropea Calabria',
     sottotitolo: 'Indicazione Geografica Protetta — UE',
@@ -59,6 +63,7 @@ export const certCards = [
   {
     id: 'iso17065',
     icon: '📐',
+    logoSrc: '/cert-logos/iso17065.svg',
     iconClass: 'olive',
     titolo: 'ISO/IEC 17065',
     sottotitolo: 'Certificazione di Prodotto — Accreditamento',
@@ -69,6 +74,7 @@ export const certCards = [
   {
     id: 'legambiente',
     icon: '🌱',
+    logoSrc: '/cert-logos/legambiente.png',
     iconClass: 'green',
     titolo: 'Legambiente Agricoltura',
     sottotitolo: 'Adesione Volontaria — Sostenibilità Ambientale',

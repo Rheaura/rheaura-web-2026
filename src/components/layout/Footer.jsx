@@ -10,15 +10,6 @@ const pagine = [
   { to: '/contatti',       label: 'Contatti' },
 ];
 
-const sociList = [
-  'Cons. Peperoncino Calabria',
-  'Soc. Coop. San Pietro',
-  'Passione di Terra',
-  'Soc. Coop. Romano',
-  'Soc. Coop. Turano',
-  'Soc. Coop. Agridoc',
-  'Soc. Coop. Komus',
-];
 
 const prodotti = [
   'Clementine Calabria',
@@ -55,21 +46,31 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="ft-col">
-          <h5>I Soci</h5>
-          <ul>
-            {sociList.map((s) => (
-              <li key={s}><a href="#">{s}</a></li>
-            ))}
-          </ul>
-        </div>
 
         <div className="ft-col">
           <h5>Prodotti</h5>
           <ul>
             {prodotti.map((p) => (
-              <li key={p}><a href="#">{p}</a></li>
+              <li key={p}><a href="/prodotti">{p}</a></li>
             ))}
+          </ul>
+        </div>
+
+        <div className="ft-col">
+          <h5>Seguici sui Social</h5>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/rheaura" target="_blank" rel="noopener noreferrer" className="ft-social-link">
+                <svg className="ft-social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/rheaura" target="_blank" rel="noopener noreferrer" className="ft-social-link">
+                <svg className="ft-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0" fill="currentColor" stroke="none"/><path d="M17.5 6.5h.01"/></svg>
+                Instagram
+              </a>
+            </li>
           </ul>
         </div>
       </div>
