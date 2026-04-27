@@ -208,7 +208,7 @@ export default function Home() {
         </div>
         <div className="prodotti-grid reveal">
           <div className="prod-card prod-card-featured">
-            <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=800&q=85" alt="Clementine Calabria" />
+            <img src="https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?w=800&q=85" alt="Clementine Calabria" />
             <div className="prod-arrow">↗</div>
             <div className="prod-card-body">
               <span className="prod-card-tag">🍊 Prima Categoria · Calabria</span>
@@ -235,7 +235,7 @@ export default function Home() {
             </div>
           </div>
           <div className="prod-card prod-card-small">
-            <img src="https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?w=600&q=80" alt="Arance Calabria" />
+            <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=600&q=80" alt="Arance Calabria" />
             <div className="prod-arrow">↗</div>
             <div className="prod-card-body">
               <span className="prod-card-tag">🟠 Inverno · Sibaritide</span>

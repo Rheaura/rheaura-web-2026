@@ -98,8 +98,7 @@ export default function ChiSiamo() {
           </div>
           <div className="storia-visual reveal">
             <div className="storia-img-wrap">
-              <img className="img-main" src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=700&q=80" alt="Raccolta ortofrutticola" />
-              <img className="img-inset" src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500&q=80" alt="Prodotti ortofrutticoli" />
+              <img className="img-main" src="/frutta-e-verdura.jpg" alt="Frutta e verdura RheAura" />
               <div className="floatbox">
                 <strong>CE</strong>
                 <span>Reg. 1308/2013<br />Riconosciuta</span>

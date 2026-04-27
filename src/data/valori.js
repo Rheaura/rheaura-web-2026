@@ -19,8 +19,8 @@ export const valori = [
     accentBox: '"La qualità non è un caso: è l\'abitudine."',
     reverse: false,
     altBg: false,
-    imgSrc: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=700&q=80',
-    imgAlt: 'Controllo qualità prodotti',
+    imgSrc: '/seme.jpg',
+    imgAlt: 'Seme - Qualità RheAura',
   },
   {
     id: 'passione',
@@ -59,8 +59,8 @@ export const valori = [
     accentBox: '"Il futuro si pianta oggi."',
     reverse: false,
     altBg: false,
-    imgSrc: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=700&q=80',
-    imgAlt: 'Campi agricoli meridione',
+    imgSrc: '/oltre-la-stagione.jpg',
+    imgAlt: 'Visione oltre la stagione',
   },
 ];
 
