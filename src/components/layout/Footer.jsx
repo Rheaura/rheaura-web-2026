@@ -78,8 +78,8 @@ export default function Footer() {
       <div className="ft-bottom">
         <p>© {new Date().getFullYear()} RheAura OP Soc. Coop. Agricola — Tutti i diritti riservati</p>
         <div className="ft-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
+          <NavLink to="/privacy">Privacy Policy</NavLink>
+          <NavLink to="/cookie-policy">Cookie Policy</NavLink>
           <a href="#">Note Legali</a>
         </div>
       </div>

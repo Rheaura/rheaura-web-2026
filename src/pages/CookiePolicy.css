@@ -1,0 +1,172 @@
+.cp-page {
+  min-height: 100vh;
+  background: var(--warm);
+}
+
+/* ── Hero ── */
+.cp-hero {
+  background: var(--g-deep);
+  padding: 90px var(--page-px) 70px;
+}
+.cp-hero-inner { max-width: 800px; }
+
+.cp-title {
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.1;
+  margin-bottom: 0.8rem;
+}
+
+.cp-subtitle {
+  font-size: 0.85rem;
+  color: rgba(246, 241, 232, 0.35);
+  letter-spacing: 0.05em;
+}
+
+/* ── Content ── */
+.cp-content {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.cp-section {
+  max-width: 800px;
+  margin-bottom: 3.5rem;
+}
+
+.cp-section h2 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--g-deep);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cp-section p {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: #444;
+  margin-bottom: 1rem;
+}
+.cp-section p:last-child { margin-bottom: 0; }
+
+/* ── Cards ── */
+.cp-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.6rem 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.cp-card-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cp-card h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--g-deep);
+}
+
+.cp-card p {
+  font-size: 0.88rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+.cp-card p:last-child { margin-bottom: 0; }
+
+/* ── Badge ── */
+.cp-badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.cp-badge--required {
+  background: rgba(61, 140, 70, 0.1);
+  color: var(--g-accent);
+}
+.cp-badge--optional {
+  background: rgba(212, 116, 42, 0.1);
+  color: var(--orange);
+}
+
+/* ── Table ── */
+.cp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin-top: 1rem;
+}
+.cp-table th,
+.cp-table td {
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  color: #555;
+  line-height: 1.5;
+}
+.cp-table th {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: rgba(0,0,0,0.02);
+}
+.cp-table code {
+  font-size: 0.8rem;
+  background: rgba(61,140,70,0.08);
+  color: var(--g-mid);
+  padding: 0.1rem 0.35rem;
+  border-radius: 2px;
+}
+
+/* ── List ── */
+.cp-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 1rem 0;
+}
+.cp-list li {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.7;
+  padding-left: 1.2rem;
+  position: relative;
+}
+.cp-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--g-accent);
+  font-size: 0.8rem;
+}
+
+/* ── Link ── */
+.cp-link {
+  color: var(--g-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.cp-link:hover { color: var(--g-mid); }
+
+@media (max-width: 600px) {
+  .cp-hero { padding: 70px 6vw 50px; }
+  .cp-card { padding: 1.2rem 1.2rem; }
+  .cp-table { font-size: 0.78rem; }
+  .cp-table th, .cp-table td { padding: 0.45rem 0.5rem; }
+}

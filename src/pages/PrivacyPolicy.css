@@ -1,0 +1,5 @@
+/* Stili specifici per PrivacyPolicy — estende CookiePolicy.css */
+
+.pp-table-wrap {
+  overflow-x: auto;
+}

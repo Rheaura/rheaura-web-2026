@@ -1,0 +1,117 @@
+.ck-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 26, 13, 0.55);
+  backdrop-filter: blur(2px);
+  z-index: 900;
+  animation: ck-fade-in 0.3s ease;
+}
+
+.ck-banner {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90vw, 720px);
+  background: var(--ink);
+  border: 1px solid rgba(125, 186, 106, 0.18);
+  border-radius: 4px;
+  z-index: 901;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: ck-slide-up 0.35s ease;
+}
+
+.ck-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.6rem 2rem;
+}
+
+.ck-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.ck-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+
+.ck-body {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: rgba(246, 241, 232, 0.45);
+}
+
+.ck-link {
+  color: var(--g-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+.ck-link:hover { color: var(--g-pale); }
+
+.ck-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex-shrink: 0;
+}
+
+.ck-btn {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.7rem 1.4rem;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.25s;
+  border: 1px solid transparent;
+}
+
+.ck-btn--primary {
+  background: var(--g-accent);
+  color: white;
+  border-color: var(--g-accent);
+}
+.ck-btn--primary:hover { background: var(--g-mid); border-color: var(--g-mid); }
+
+.ck-btn--secondary {
+  background: transparent;
+  color: var(--g-light);
+  border-color: rgba(125, 186, 106, 0.35);
+}
+.ck-btn--secondary:hover { border-color: var(--g-light); }
+
+@keyframes ck-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes ck-slide-up {
+  from { opacity: 0; transform: translateX(-50%) translateY(16px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .ck-inner {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.4rem 1.4rem;
+  }
+  .ck-actions {
+    flex-direction: row;
+    width: 100%;
+  }
+  .ck-btn {
+    flex: 1;
+    text-align: center;
+  }
+}
